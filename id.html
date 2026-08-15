@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ALL · ID · Master-Sortierer</title>
+
+<style>
+body { background:#000; color:#0f0; font-family:monospace; text-align:center; padding:40px; }
+
+#cube {
+    width:360px;
+    height:360px;
+    margin:auto;
+    position:relative;
+}
+
+.cell {
+    width:30px;
+    height:30px;
+    background:#0f0;
+    border:1px solid #333;
+    position:absolute;
+}
+</style>
+</head>
+
+<body>
+
+<h1>ALL · ID · Master-Sortierer</h1>
+<div id="cube"></div>
+
+<script>
+const cube = document.getElementById("cube");
+
+for(let r=0; r<9; r++){
+    for(let c=0; c<9; c++){
+        const cell = document.createElement("div");
+        cell.className = "cell";
+        cell.style.left = (c*40)+"px";
+        cell.style.top  = (r*40)+"px";
+        cube.appendChild(cell);
+    }
+}
+</script>
+
+</body>
+</html>
