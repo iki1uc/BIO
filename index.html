@@ -1,37 +1,35 @@
 <!DOCTYPE html>
-<html>
+<html lang="de">
 <head>
 <meta charset="UTF-8">
-<title>GEO‑3D‑ASCII · RUN8 · iki1uc</title>
+<title>BIO · Scientist Verification · U&ME</title>
+
 <style>
-body { background:#000; color:#0f0; font-family:Consolas; padding:20px; }
-pre { font-size:16px; line-height:18px; }
+body{background:#000;color:#0f0;font-family:monospace;padding:40px;}
+pre{background:#111;border-left:3px solid #6cf;padding:12px;}
+button{background:#111;color:#0f0;border:1px solid #333;padding:8px 16px;margin-bottom:10px;}
+.block{margin-bottom:20px;}
 </style>
 </head>
+
 <body>
 
-<h2>GEO‑3D‑ASCII · RUN8</h2>
-<pre id="geo">START…</pre>
+<h1>BIO · Scientist Verification · U&ME</h1>
 
-<script>
-let f = 0;
+<div class="block">
+    <button onclick="verifyBIO()">BIO prüfen</button>
+    <pre id="out">Bereit…</pre>
+</div>
 
-function anim(){
-    f++;
+<script type="module">
+import { BIO } from "./BIO.js";
 
-    // 3D‑Rotation simuliert durch wechselnde Tiefe
-    const depth = ["●","○","·","∙","•"];
-    const d = (i)=> depth[(f+i)%depth.length];
+function verifyBIO(){
+    const out = BIO.id();
+    document.getElementById("out").textContent =
+        JSON.stringify(out, null, 2);
+}
+</script>
 
-    // Anime‑Glow simuliert durch Funken
-    const glow = (f%2 ? "✦" : "✧");
-
-    // Amiga‑Raster simuliert durch horizontale Balken
-    const raster = (f%3 ? "▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓" : "██████████████████");
-
-    const geo = `
-GEO‑3D‑ROTATION (frame ${f})
-
-X‑Axis  ─── ${d(1)} ${d(2)} ${d(3)}
-Y‑Axis  ─── ${d(2)} ${d(3)} ${d(4)}
-Z‑
+</body>
+</html>
