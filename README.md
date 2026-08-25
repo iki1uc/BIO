@@ -1,97 +1,112 @@
-# BIO · Lebenszeichen-Deuter · ECO-Wert · C81-Bildung
+🧬 BIO · Technische Lebenszeichen-Sphäre
+BIO ist ein Modul der C81‑Bildungsschicht und dient als technischer
+Lebenszeichen-Deuter, ECO-Wert-Bildner und Aktivitäts-Scanner  
+innerhalb der NC/RESPO‑Engine.
 
-Das Modul **BIO** ist ein Teil der 81-Bildungsschicht und dient als
-vorläufiger **Lebenszeichen-Deuter** für das NC/RESPO-System.
-BIO misst keine biologischen Werte im klassischen Sinn, sondern bildet
-eine technische Abstraktion von **Lebenszeichen**, **ECO-Werten** und
-**Systemaktivität** im Rahmen der C81-Engine.
+BIO bildet keine biologische Realität ab.
+BIO abstrahiert Lebenszeichen in technische Aktivitätsfelder, die später
+in macro/micro/nano‑BIO‑Räume eingemessen werden.
 
-Die tatsächlichen Messwerte werden später **neu eingemessen** und
-in weiteren BIO-Untermodule ausgelagert. Dieses README beschreibt
-den aktuellen Stand des Moduls.
+BIO ist die Sphäre, in der SU arbeitet.
+SU bleibt closed, BIO erklärt SU.
 
----
+👉 SU · Closed  
+👉 BIO · SU‑Integration
 
-## Zweck
-
+🎯 Zweck des Moduls
 BIO dient als:
-- Lebenszeichen-Indikator  
-- ECO-Wert-Bildner  
-- Aktivitäts-Detektor  
-- Ergänzung zur C81-Bildungsschicht  
-- Vorstufe für spätere BIO-Messräume (macro/micro/nano)
 
-BIO ist **nur eines von vielen Modulen**, aber eines der
-wichtigeren, da es die Verbindung zwischen Systemaktivität
-und ECO-Bildung herstellt.
+Lebenszeichen-Indikator (technisch, nicht biologisch)
 
----
+ECO-Wert-Bildner (C81‑kompatibel)
 
-## Struktur
+Aktivitäts-Detektor (NC‑Zonenverträglich)
 
-Das BIO-Modul besteht aus folgenden Dateien:
+C81‑Schichtverstärker
 
-- `index.html` – Oberfläche / Testpunkt  
-- `id.html` – Identität / Modulkennung  
-- `README.md` – Beschreibung (diese Datei)  
-- `iki1uc/` – BIO-Subkern (vorläufig)  
+Vorstufe für BIO‑Messräume (macro/micro/nano/subnano)
 
-Weitere BIO-Untermodule werden später ergänzt:
+BIO ist ein Kernmodul, weil es die Brücke zwischen
+Systemaktivität und ECO‑Bildung bildet.
 
-- `bio.core.js`  
-- `bio.sense.js`  
-- `bio.react.js`  
-- `bio.link.js`  
+🧩 Struktur
+BIO besteht aus:
 
-Diese Module sind aktuell **Platzhalter** und werden nach
-Einmessung der BIO-Werte gefüllt.
+index.html — Testpunkt / UI
 
----
+id.html — Identität / Modulkennung
 
-## Funktion (vorläufig)
+README.md — Beschreibung
 
+iki1uc/ — BIO‑Subkern (vorläufig)
+
+Geplante Erweiterungen:
+
+bio.core.js — Kernmessung
+
+bio.sense.js — Sensorik / ECO‑Felder
+
+bio.react.js — Reaktion / Aktivität
+
+bio.link.js — Verbindung / C81‑Kopplung
+
+Diese Module werden nach Einmessung gefüllt.
+
+⚙️ Funktion (vorläufig)
 BIO liefert aktuell:
 
-- einfache Lebenszeichen-Auswertung  
-- ECO-Wert-Bildung (rudimentär)  
-- C81-Kompatibilität  
-- RESPO-Anbindung  
-- NC-Zonenverträglichkeit  
+Lebenszeichen-Auswertung (technisch)
 
-Die Werte sind **nicht final** und dienen nur als
-Funktionsnachweis für die C81-Bildungsschicht.
+ECO-Wert-Bildung (rudimentär)
 
----
+C81‑Kompatibilität
 
-## Status
+RESPO‑Anbindung
 
-- BIO: **aktiv**  
-- Werte: **vorläufig**  
-- Einmessung: **ausstehend**  
-- Erweiterung: **geplant**  
-- Integration in C81: **bereit**  
+NC‑Zonenverträglichkeit
 
----
+Alle Werte sind vorläufig und dienen als
+Funktionsnachweis der C81‑Bildungsschicht.
 
-## Ausblick
+📡 Status
+BIO: aktiv
 
-Sobald die BIO-Werte neu eingemessen sind, wird das Modul
-um folgende Bereiche erweitert:
+Werte: vorläufig
 
-- BIO.macro (grobe Lebenszeichen)  
-- BIO.micro (feine ECO-Werte)  
-- BIO.nano (atomare Aktivität)  
-- BIO.subnano (quantisierte ECO-Felder)  
+Einmessung: ausstehend
 
-Diese Erweiterungen folgen der C81-Bildungslogik und werden
-schrittweise ergänzt.
+Erweiterung: geplant
 
----
+Integration in C81: bereit
 
-## Hinweis
+🔭 Ausblick
+Nach der Einmessung folgen:
 
-BIO ist ein technisches Modul und bildet keine biologische
-Realität ab. Es dient ausschließlich der Systembildung,
-ECO-Wert-Erzeugung und Aktivitätsdarstellung innerhalb der
-C81-Engine.
+BIO.macro — grobe Lebenszeichen
 
+BIO.micro — feine ECO‑Werte
+
+BIO.nano — atomare Aktivität
+
+BIO.subnano — quantisierte ECO‑Felder
+
+Alle Erweiterungen folgen der C81‑Bildungslogik.
+
+🧩 Hinweis
+BIO ist ein technisches Modul.
+Es bildet keine biologische Realität ab.
+BIO dient ausschließlich:
+
+der Systembildung
+
+der ECO-Wert-Erzeugung
+
+der Aktivitätsdarstellung
+
+der C81‑Engine
+
+🧬 SU · Closed (Hinweis)
+SU ist abgeschlossen und wird nicht mehr erklärt.
+BIO nutzt SU vollständig, aber SU bleibt closed.
+
+Wer ehrliches Interesse hat, soll selbst forschen.
